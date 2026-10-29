@@ -1,0 +1,3 @@
+name = "stock-news-proxy"
+main = "news-proxy.js"
+compatibility_date = "2026-01-01"

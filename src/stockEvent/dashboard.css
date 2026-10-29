@@ -1,0 +1,57 @@
+:root { color-scheme: dark; }
+body { margin: 0; background: #0b0e14; color: #e6e9ef; font: 14px/1.4 system-ui, -apple-system, sans-serif; }
+.sd { max-width: 1200px; margin: 0 auto; padding: 20px 16px; }
+.sd-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.sd-head h1 { margin: 0; font-size: 22px; }
+.sd-note { color: #8b93a7; font-size: 12px; }
+.sd-live { color: #3ddc97; font-size: 12px; font-weight: 600; }
+.sd-live::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #3ddc97; animation: pulse 1.5s infinite; }
+@keyframes pulse { 50% { opacity: .3; } }
+.sd-grid { display: grid; grid-template-columns: 300px 1fr; gap: 16px; }
+@media (max-width: 800px) { .sd-grid { grid-template-columns: 1fr; } }
+.sd-card { background: #141925; border: 1px solid #222a3a; border-radius: 10px; padding: 14px; margin-bottom: 16px; }
+.sd-card h2 { margin: 0 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #8b93a7; }
+.sd-form { display: flex; gap: 6px; margin-bottom: 10px; }
+.sd input { flex: 1; min-width: 0; background: #0b0e14; border: 1px solid #2a3347; color: inherit; border-radius: 6px; padding: 7px 9px; }
+.sd button { background: #2a3347; color: inherit; border: 0; border-radius: 6px; padding: 7px 10px; cursor: pointer; }
+.sd button:hover { background: #36415c; }
+.sd ul { list-style: none; margin: 0; padding: 0; }
+.sd-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sd-chip { display: flex; align-items: center; gap: 6px; background: #0b0e14; border: 1px solid #2a3347; border-radius: 999px; padding: 3px 4px 3px 10px; font-weight: 600; }
+.sd-chip button { padding: 0 7px; border-radius: 999px; background: transparent; color: #8b93a7; }
+.sd-event { display: block; width: 100%; text-align: left; background: #0b0e14; border: 1px solid #222a3a; margin-bottom: 8px; padding: 10px; }
+.sd-event.active { border-color: #4c8dff; }
+.sd-event .row { display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+.sd-event .sym { font-weight: 700; font-size: 15px; }
+.sd-event .meta { color: #8b93a7; font-size: 12px; margin-top: 4px; }
+.sd-badge { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+.Bullish { background: #12382a; color: #3ddc97; }
+.Bearish { background: #3d1a20; color: #ff6b7a; }
+.Neutral { background: #2a3347; color: #b8c0d4; }
+.up { color: #3ddc97; } .down { color: #ff6b7a; }
+.sd-detail-head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.sd-detail-head h3 { margin: 0; font-size: 20px; }
+.sd-headline { color: #8b93a7; margin: 4px 0 0; }
+.sd-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.sd-stat { background: #0b0e14; border-radius: 8px; padding: 10px; }
+.sd-stat .l { color: #8b93a7; font-size: 11px; text-transform: uppercase; }
+.sd-stat .v { font-size: 20px; font-weight: 700; }
+.sd-scorebar { height: 6px; background: #222a3a; border-radius: 3px; margin-top: 6px; overflow: hidden; }
+.sd-scorebar i { display: block; height: 100%; background: #4c8dff; }
+.sd table { width: 100%; border-collapse: collapse; }
+.sd th, .sd td { padding: 8px; text-align: left; border-bottom: 1px solid #222a3a; }
+.sd th { color: #8b93a7; font-size: 11px; text-transform: uppercase; }
+.sd-range { position: relative; height: 8px; background: #222a3a; border-radius: 4px; min-width: 120px; }
+.sd-range i { position: absolute; top: 0; bottom: 0; background: #4c8dff55; border-radius: 4px; }
+.sd-range b { position: absolute; top: -2px; bottom: -2px; width: 2px; background: #4c8dff; }
+.sd-empty { color: #8b93a7; padding: 24px; text-align: center; }
+.sd-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.sd-tabs button.active { background: #4c8dff; color: #fff; }
+.sd-board-grid { grid-template-columns: 1fr 340px; }
+@media (max-width: 800px) { .sd-board-grid { grid-template-columns: 1fr; } }
+.sd button.link { background: none; padding: 0; font-weight: 700; color: #7db0ff; }
+.row-active td { background: #1a2233; }
+.sd-news li { margin-bottom: 12px; }
+.sd-news a { color: #e6e9ef; }
+.sd-cand .sd-event { margin-bottom: 6px; }
+.sd-card { overflow-x: auto; }
